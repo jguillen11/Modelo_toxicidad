@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Modelo de Toxicidad</title>
+</head>
+
+<body>
+    <div class="layout">
+        <h1>Clasificador de toxicidad</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Texto</th>
+                    <th scope="col">ataque de identidad
+                    </th>
+                    <th scope="col">insulto</th>
+                    <th scope="col">obsceno
+                    </th>
+                    <th scope="col">toxicidad grave
+                    </th>
+                    <th scope="col">sexual explícito
+                    </th>
+                    <th scope="col">amenaza
+                    </th>
+                    <th scope="col">
+                        toxicidad
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tablaResultados">
+                
+            </tbody>
+        </table>
+        <div>
+            <input type="text" id="textoEntrada" class="input_clasificador" placeholder="'i.e. You suck'">
+            <button type="button" id="btnClasificar" class="btn btn-primary">Clasificar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

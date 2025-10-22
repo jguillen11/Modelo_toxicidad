@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    margin: 20px;
+    padding: 40px;
+}
+
+.layout h1 {
+    text-align: center;
+}
+
+.input_clasificador {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 0.2rem;
+    margin-bottom: 20px;
+}
+
+.input_clasificador:focus {
+    outline: none;
+}
