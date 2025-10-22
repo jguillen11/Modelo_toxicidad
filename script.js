@@ -6,7 +6,6 @@ toxicity.load(threshold).then(model => {
     console.log("Modelo de toxicidad cargado correctamente.");
 });
 
-// Evento del botón
     document.getElementById("btnClasificar").addEventListener("click", async () => {
     const textoInput = document.getElementById("textoEntrada");    
     const texto = document.getElementById("textoEntrada").value.trim();
@@ -21,7 +20,6 @@ toxicity.load(threshold).then(model => {
     textoInput.value = "";
 });
 
-// Mostrar resultados en la tabla
 function mostrarResultados(texto, predictions) {
     const tbody = document.getElementById("tablaResultados");
     const fila = document.createElement("tr");
