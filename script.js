@@ -1,4 +1,4 @@
-const threshold = 0.9;
+const threshold = 0.5;
 let modeloToxicidad;
 
 toxicity.load(threshold).then(model => {
