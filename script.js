@@ -23,7 +23,7 @@ toxicity.load(threshold).then(model => {
 function mostrarResultados(texto, predictions) {
     const tbody = document.getElementById("tablaResultados");
     const fila = document.createElement("tr");
-    fila.innerHTML = `<td>${texto}</td>`;
+    fila.innerHTML = `<td class="table-light">${texto}</td>`;
 
     const etiquetas = [
         "identity_attack",
